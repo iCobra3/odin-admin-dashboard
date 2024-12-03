@@ -1,0 +1,34 @@
+/* reset defaults of browsers */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* take the full height and width */
+html,
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.header {
+  grid-column: 2/5;
+  background-color: #fecaca;
+}
+.sidebar {
+  grid-row: 1/5;
+  background-color: #dc2626;
+}
+
+.content {
+  /* grid-area: 2, 2, 4, 4; */
+  grid-column: 2/5;
+  grid-row: 2/5;
+  background-color: #fef2f2;
+}
