@@ -17,14 +17,17 @@ body {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(5, 1fr);
+  background-color: #cbd5e1;
 }
 
 /* set header layout */
 .header {
   grid-column: 2/7;
+  grid-row:1/2;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
+  background-color: white;
 }
 .search-bar {
   display: flex;
@@ -227,4 +230,47 @@ body {
   grid-column: 2/7;
   grid-row: 2/6;
   background-color: #fef2f2;
+  /* margin-left: 15px; */
+  /* margin-bottom: 15px; */
+  font-size: 2em;
+  font-weight: bold;
+  display: grid;
+  grid-template-rows: auto 1fr 1fr;
+  grid-template-columns: 3fr 1fr;
+  background-color: #cbd5e1;
+  height: 100%; /* Added height: 100% */
 }
+.content p {
+  margin: 5px 15px;
+}
+
+.cards-container {
+  grid-area: 2/1/4/2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px;
+  padding: 10px;
+}
+
+.card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+  min-width: 200px; /* Added min-width */
+  min-height: 100px; /* Added min-height */
+  position: relative;
+}
+
+.card::before {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px; 
+  height: 100%; 
+  background: yellow;
+  z-index: 1; 
+}
+
+/* trending part */
