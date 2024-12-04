@@ -125,6 +125,23 @@ body {
   width: 50px;
 }
 
+.buttons {
+  grid-template-columns: 2/3;
+  grid-template-rows: 2/3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  padding-bottom: 15px;
+}
+
+.buttons button {
+  color: white;
+  background-color: rgba(11, 96, 149, 0.763);
+  border: none;
+  border-radius: 15px;
+  height: 40px;
+  width: 100px;
+}
 /* sidebar work */
 .sidebar {
   grid-row: 1/7;
@@ -155,7 +172,7 @@ body {
   overflow: hidden;
 }
 
-.icon-container{
+.icon-container {
   margin-right: 20px;
 }
 .icon-container img {
