@@ -4,167 +4,192 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="header">
-        <!-- searchbar -->
-        <div class="search-bar">
-            <div class="search-icon-container">            
-                <img src="assets/search.svg" alt="">
-            </div>
-            <div class="search-input-container">
-                <input type="text" placeholder="Search..." class="search-input">
-            </div>
+      <!-- searchbar -->
+      <div class="search-bar">
+        <div class="search-icon-container">
+          <img src="assets/search.svg" alt="" />
         </div>
-        <!-- greeting -->
+        <div class="search-input-container">
+          <input type="text" placeholder="Search..." class="search-input" />
+        </div>
+      </div>
+      <!-- greeting -->
+      <div class="hey-container">
+        <div class="account-icon">
+          <img src="assets/account.svg" alt="" />
+        </div>
+        <div class="text-part">
+          <span>hi, there</span>
+          <p>Bruce Wine (@madman)</p>
+        </div>
+      </div>
+      <!-- notification bar -->
+      <div class="notification-bar">
+        <div class="icon-container">
+          <img src="assets/notification.svg" alt="" />
+        </div>
         <div class="hey-container">
-            <div class="account-icon">
-                <img src="assets/account.svg" alt="">
-            </div>
-            <div class="text-part">
-                <span>hi, there</span>
-                <p>Bruce Wine (@madman)</p>
-            </div>
-        </div>
-        <!-- notification bar -->
-         <div class="notification-bar">
-            <div class="icon-container">
-                <img src="assets/notification.svg" alt="">
-            </div>
-            <div class="hey-container">
-                <div class="account-icon">
-                    <img src="assets/account.svg" alt="">
-                </div>
-                <div class="text-part">
-                    <!-- <span>hi, there</span> -->
-                    <p>Bruce Wine</p>
-                </div>
-            </div>
-         </div>
-
-         <!-- buttons -->
-          <div class="buttons">
-              <div class="button-container"><button>news</button></div>
-              <div class="button-container"><button>upload</button></div>
-              <div class="button-container"><button>share</button></div>
+          <div class="account-icon">
+            <img src="assets/account.svg" alt="" />
           </div>
+          <div class="text-part">
+            <!-- <span>hi, there</span> -->
+            <p>Bruce Wine</p>
+          </div>
+        </div>
+      </div>
 
+      <!-- buttons -->
+      <div class="buttons">
+        <div class="button-container"><button>news</button></div>
+        <div class="button-container"><button>upload</button></div>
+        <div class="button-container"><button>share</button></div>
+      </div>
     </div>
 
     <div class="sidebar">
-        <div class="logo-container">
-            <div class="icon-container">
-                <img src="assets/dashboard.png" alt="">
-            </div>
-            <p>Dashboard</p>
+      <div class="logo-container">
+        <div class="icon-container">
+          <img src="assets/dashboard.png" alt="" />
         </div>
-        <ul class="menu-list-1">
-            <li class="menu-item">
-              <img src="assets/home.png" alt="Home Icon">
-              <span>Home</span>
-            </li>
-            <li class="menu-item">
-              <img src="assets/profile.png" alt="Profile Icon">
-              <span>Profile</span>
-            </li>
-            <li class="menu-item">
-              <img src="assets/messages.png" alt="Messages Icon">
-              <span>Messages</span>
-            </li>
-            <li class="menu-item">
-              <img src="assets/history.png" alt="History Icon">
-              <span>History</span>
-            </li>
-            <li class="menu-item">
-              <img src="assets/community.png" alt="Communities Icon">
-              <span>Communities</span>
-            </li>
-          </ul>
-          
-    </ul>
-    <ul class="menu-list-2">
+        <p>Dashboard</p>
+      </div>
+      <ul class="menu-list-1">
         <li class="menu-item">
-          <img src="assets/settings.svg" alt="Settings">
+          <img src="assets/home.png" alt="Home Icon" />
+          <span>Home</span>
+        </li>
+        <li class="menu-item">
+          <img src="assets/profile.png" alt="Profile Icon" />
+          <span>Profile</span>
+        </li>
+        <li class="menu-item">
+          <img src="assets/messages.png" alt="Messages Icon" />
+          <span>Messages</span>
+        </li>
+        <li class="menu-item">
+          <img src="assets/history.png" alt="History Icon" />
+          <span>History</span>
+        </li>
+        <li class="menu-item">
+          <img src="assets/community.png" alt="Communities Icon" />
+          <span>Communities</span>
+        </li>
+      </ul>
+
+      <ul class="menu-list-2">
+        <li class="menu-item">
+          <img src="assets/settings.svg" alt="Settings" />
           <span>Settings</span>
         </li>
         <li class="menu-item">
-          <img src="assets/support.svg" alt="Support">
+          <img src="assets/support.svg" alt="Support" />
           <span>Support</span>
         </li>
         <li class="menu-item">
-          <img src="assets/privacy.svg" alt="privacy">
+          <img src="assets/privacy.svg" alt="privacy" />
           <span>Privacy</span>
         </li>
-
       </ul>
-    </ul>
-</div>
-
-<div class="content">
-    <!-- <P>your content</P> -->
-     <h3>your projects</h3>
-     <h3>Announcements</h3>
-
-    <div class="cards-container">
-        <div class="card">
-            <h3>Save Gotham</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos earum ratione mollitia, similique nostrum blanditiis?</p>
-        </div>
-    
-        <div class="card">
-            <h3>Repaint the Batmobile</h3>
-            <p>Go for neon pink with glitter—intimidation is so last season.</p>
-        </div>
-    
-        <div class="card">
-            <h3>Finish the Joker</h3>
-            <p>Beat him in a karaoke duel. His laugh is off-key anyway!</p>
-        </div>
-    
-        <div class="card">
-            <h3>Chill with Catwoman</h3>
-            <p>Discuss whether dogs or cats make better sidekicks.</p>
-        </div>
-    
-        <div class="card">
-            <h3>Practice Yoga</h3>
-            <p>Work on those rooftop jump landings without spraining an ankle.</p>
-        </div>
-    
-        <div class="card">
-            <h3>Hey World</h3>
-            <p>Post on social media: "Madman’s got a plan. Be afraid. Or amused."</p>
-        </div>
     </div>
-    
-    <div class="anouncement-container">
+
+    <div class="content">
+      <!-- <P>your content</P> -->
+      <h3>your projects</h3>
+      <h3>Announcements</h3>
+
+      <div class="cards-container">
+        <div class="card">
+          <h3>Save Gotham</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos earum
+            ratione mollitia, similique nostrum blanditiis?
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Repaint the Batmobile</h3>
+          <p>Go for neon pink with glitter—intimidation is so last season.</p>
+        </div>
+
+        <div class="card">
+          <h3>Finish the Joker</h3>
+          <p>Beat him in a karaoke duel. His laugh is off-key anyway!</p>
+        </div>
+
+        <div class="card">
+          <h3>Chill with Catwoman</h3>
+          <p>Discuss whether dogs or cats make better sidekicks.</p>
+        </div>
+
+        <div class="card">
+          <h3>Practice Yoga</h3>
+          <p>Work on those rooftop jump landings without spraining an ankle.</p>
+        </div>
+
+        <div class="card">
+          <h3>Hey World</h3>
+          <p>
+            Post on social media: "Madman’s got a plan. Be afraid. Or amused."
+          </p>
+        </div>
+      </div>
+
+      <div class="anouncement-container">
         <div class="anouncement-card">
-                <h4>some place holder</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolore, tenetur blanditiis veritatis reiciendis odio!</p>
+          <h4>some place holder</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            dolore, tenetur blanditiis veritatis reiciendis odio!
+          </p>
         </div>
         <div class="anouncement-card">
-            <h4>some place holder</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolore, tenetur blanditiis veritatis reiciendis odio!</p>
-    </div>   <div class="anouncement-card">
-                <h4>some place holder</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolore, tenetur blanditiis veritatis reiciendis odio!</p>
+          <h4>some place holder</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            dolore, tenetur blanditiis veritatis reiciendis odio!
+          </p>
         </div>
-    </div>
-    <div class="trending-container">
-        <h3>trending</h3>
+        <div class="anouncement-card">
+          <h4>some place holder</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            dolore, tenetur blanditiis veritatis reiciendis odio!
+          </p>
+        </div>
+      </div>
+      <div class="trending-container">
+        <h3>Trending</h3>
         <div class="trending-card">
-            <div class="trend">
-                <img src="" alt="">
-                <div>
-                    <h5></h5>
-                    <p></p>
-                </div>
+          <div class="trend">
+            <img src="assets/trend1.svg" alt="Placeholder Image" />
+            <div class="trend-text">
+              <h5>@spidercan</h5>
+              <p>Lorem ipsum dolor sit amet.</p>
             </div>
+          </div>
+
+          <div class="trend">
+            <img src="assets/trend1.svg" alt="Placeholder Image" />
+            <div class="trend-text">
+              <h5>@spidercan</h5>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+
+          <div class="trend">
+            <img src="assets/trend1.svg" alt="Placeholder Image" />
+            <div class="trend-text">
+              <h5>@spidercan</h5>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    </div>
-    </div>
- 
   </body>
 </html>
