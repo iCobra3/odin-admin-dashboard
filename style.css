@@ -241,15 +241,13 @@ body {
   grid-column: 2/7;
   grid-row: 2/6;
   background-color: #fef2f2;
-  /* margin-left: 15px; */
-  /* margin-bottom: 15px; */
-  /* font-size: 2vw; */
   font-weight: bold;
   display: grid;
   grid-template-rows: auto 1fr 1fr;
   grid-template-columns: 3fr 1fr;
   background-color: #cbd5e1;
   height: 100%; /* Added height: 100% */
+  gap: 10px;
 }
 .content p {
   margin: 5px 15px;
@@ -330,11 +328,12 @@ body {
 }
 /* trending part */
 .trending-container {
-  /* grid-area: 3/2/4/3; */
   grid-row: 3/4;
   grid-column: 2/3;
   align-self: stretch;
   justify-self: stretch;
+  /* margin-top: 1em; */
+  gap: 20px;
 }
 
 .trending-card {
