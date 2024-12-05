@@ -1,3 +1,6 @@
+/* add Caveat font famil from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
 /* reset defaults of browsers */
 * {
   margin: 0px;
@@ -11,7 +14,7 @@ html,
 body {
   height: 100vh;
   width: 100vw;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Caveat, Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 body {
@@ -149,7 +152,7 @@ body {
 /* sidebar work */
 .sidebar {
   grid-row: 1/-1;
-  background-color: #dc2626;
+  background-color: #1f2937;
   display: grid;
   grid-template-rows: auto 1fr 1fr;
   overflow-y: auto; /* added this to fix overflow */
@@ -159,19 +162,18 @@ body {
 .logo-container {
   display: flex;
   align-items: center;
-  justify-content: start; /* Center logo horizontally */
-  padding: 0 1rem; /* Adjust as needed */
-  max-width: 100%; /* Ensure it doesn't exceed container's width */
-  /* height: 20px; */
+  justify-content: start;
+  padding: 1rem 1rem;
+  max-width: 100%;
 }
 .dashicon-container {
-  width: 3.5em;
+  width: 2.5em;
   margin-right: 5px;
 }
 /* Logo image */
 .logo-container img {
-  width: 100%; /* Make the logo responsive, adjust width based on its container */
-  height: auto; /* Maintain the aspect ratio */
+  width: 100%;
+  height: auto;
   max-width: 200px; /* Maximum width, adjust as needed */
   object-fit: contain; /* Ensures the logo is scaled proportionally */
 }
@@ -401,4 +403,8 @@ body {
     grid-row: 3 / 4; /* Content below header */
     grid-column: 1 / -1; /* Span full width */
   }
+}
+
+h3 {
+  padding: 0.5em 0.4em;
 }
