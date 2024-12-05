@@ -3,15 +3,15 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 /* take the full height and width */
 html,
 body {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  /* font-size: 15; */
 }
 
 body {
@@ -84,14 +84,15 @@ body {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
+  gap: 10px;
 }
+
 .account-icon {
   display: flex;
   justify-content: center;
   align-items: center;
   grid-column: 1/2;
-  height: 100px;
-  gap: 25px;
+  height: 80%;
 }
 
 .account-icon img {
@@ -143,47 +144,58 @@ body {
   color: white;
   background-color: rgba(11, 96, 149, 0.763);
   border: none;
-  border-radius: 15px;
-  height: 4em;
-  width: 10em;
-}
-/* sidebar work */
-.sidebar {
-  grid-row: 1/7;
-  background-color: #dc2626;
-  display: grid;
-  grid-template-rows: 150px 1fr 1fr;
-}
-.logo-container {
-  grid-row: 1/2;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  gap: 15px;
-  padding: 1.3em;
+  border-radius: 10px;
+  height: 3em;
+  width: 7.5em;
 }
 
-.logo-container p {
-  font-size: 2.5vw;
+/* sidebar work */
+.sidebar {
+  grid-row: 1/-1;
+  background-color: #dc2626;
+  display: grid;
+  grid-template-rows: auto 1fr 1fr;
+  overflow-y: auto; /* added this to fix overflow */
+}
+
+/* Logo container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: start; /* Center logo horizontally */
+  padding: 0 1rem; /* Adjust as needed */
+  max-width: 100%; /* Ensure it doesn't exceed container's width */
+  /* height: 20px; */
+}
+.dashicon-container {
+  width: 3.5em;
+  margin-right: 5px;
+}
+/* Logo image */
+.logo-container img {
+  width: 100%; /* Make the logo responsive, adjust width based on its container */
+  height: auto; /* Maintain the aspect ratio */
+  max-width: 200px; /* Maximum width, adjust as needed */
+  object-fit: contain; /* Ensures the logo is scaled proportionally */
+}
+
+.logo-container span {
+  font-size: 1.1rem;
   color: white;
   font-weight: 900;
 }
-.logo-container.icon-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 20%;
-  overflow: hidden;
+
+/* For smaller screens (optional) */
+@media (max-width: 768px) {
+  .logo-container img {
+    max-width: 150px; /* Make logo smaller on mobile */
+  }
 }
 
-.icon-container {
-  margin-right: 20px;
-}
-.icon-container img {
-  max-width: 60%;
-  max-height: 60%;
-  object-fit: cover;
+@media (max-width: 480px) {
+  .logo-container img {
+    max-width: 120px; /* Even smaller on very small screens */
+  }
 }
 
 .menu-list-1,
@@ -210,7 +222,7 @@ body {
   display: flex;
   align-items: center;
   gap: 15px;
-  padding: 10px;
+  /* padding: 10px; */
   border-radius: 8px;
   transition: background-color 0.3s ease, transform 0.3s ease;
   cursor: pointer;
@@ -218,14 +230,14 @@ body {
 }
 
 .menu-item img {
-  width: 2.5em;
-  height: 2.5em;
+  width: 1em;
+  height: 1em;
   filter: brightness(0) invert(1);
 }
 
 .menu-item span {
-  font-size: 2vw;
-  font-weight: 600;
+  font-size: 1em;
+  font-weight: 400;
   color: white;
 }
 .content {
